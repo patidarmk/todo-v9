@@ -26,7 +26,7 @@ const rootRoute = createRootRoute({
       </TooltipProvider>
     </QueryClientProvider>
   ),
-  notFoundComponent: NotFound,
+  notFoundComponent: () => <NotFound />
 })
 
 // Create index route
