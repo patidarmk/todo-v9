@@ -1,0 +1,68 @@
+import { Todo } from "@/types";
+
+export const initialTodos: Todo[] = [
+  {
+    id: "TASK-1",
+    title: "Design the new dashboard layout",
+    description: "Create a modern and intuitive dashboard design using Figma. Focus on user experience and data visualization.",
+    status: "in-progress",
+    priority: "high",
+    createdAt: new Date("2024-07-20T10:00:00Z"),
+  },
+  {
+    id: "TASK-2",
+    title: "Develop the authentication API",
+    description: "Implement JWT-based authentication endpoints for user login, registration, and logout.",
+    status: "todo",
+    priority: "high",
+    createdAt: new Date("2024-07-19T14:30:00Z"),
+  },
+  {
+    id: "TASK-3",
+    title: "Set up the CI/CD pipeline",
+    description: "Configure GitHub Actions to automate testing and deployment to the staging environment.",
+    status: "done",
+    priority: "medium",
+    createdAt: new Date("2024-07-18T09:00:00Z"),
+  },
+  {
+    id: "TASK-4",
+    title: "Write documentation for the API",
+    description: "Use Swagger/OpenAPI to generate comprehensive and interactive API documentation.",
+    status: "todo",
+    priority: "medium",
+    createdAt: new Date("2024-07-21T11:00:00Z"),
+  },
+  {
+    id: "TASK-5",
+    title: "Fix bug in payment gateway integration",
+    description: "Investigate and resolve the issue where payments are failing for certain credit card types.",
+    status: "in-progress",
+    priority: "high",
+    createdAt: new Date("2024-07-22T16:00:00Z"),
+  },
+  {
+    id: "TASK-6",
+    title: "Refactor the user profile component",
+    description: "Improve the performance and readability of the React component for the user profile page.",
+    status: "todo",
+    priority: "low",
+    createdAt: new Date("2024-07-22T09:30:00Z"),
+  },
+  {
+    id: "TASK-7",
+    title: "Conduct user acceptance testing (UAT)",
+    description: "Prepare test cases and coordinate with the QA team to perform UAT on the latest build.",
+    status: "todo",
+    priority: "medium",
+    createdAt: new Date("2024-07-23T13:00:00Z"),
+  },
+  {
+    id: "TASK-8",
+    title: "Update third-party dependencies",
+    description: "Check for security vulnerabilities and update all outdated npm packages to their latest stable versions.",
+    status: "done",
+    priority: "low",
+    createdAt: new Date("2024-07-17T15:00:00Z"),
+  },
+];
