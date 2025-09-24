@@ -1,5 +1,7 @@
-import { useLocation } from "react-router-dom";
+import { useLocation } from "@tanstack/react-router";
 import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Link } from "@tanstack/react-router";
 
 const NotFound = () => {
   const location = useLocation();
@@ -12,13 +14,18 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <div className="min-h-screen flex items-center justify-center bg-background">
+      <div className="text-center p-8 border rounded-lg shadow-xl bg-card">
+        <h1 className="text-9xl font-black text-primary animate-pulse">404</h1>
+        <p className="text-2xl font-bold tracking-tight text-foreground sm:text-4xl">
+          Page Not Found
+        </p>
+        <p className="mt-4 text-lg text-muted-foreground">
+          Sorry, we couldn't find the page you're looking for.
+        </p>
+        <Button asChild className="mt-6">
+          <Link to="/">Return to Home</Link>
+        </Button>
       </div>
     </div>
   );
